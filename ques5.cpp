@@ -14,12 +14,27 @@ T linearsearch(T arr[],int n,T tofind){
     }
 }
 int main() {
-    int arr[] = {10, 20, 30, 40, 50};
-    int n = 5, tofind = 30;
-    int result = linearsearch(arr, n, tofind);
-    if (result != -1)
-        cout << "Found at index: " << result << endl;
+    int n;
+    int arr[100];
+
+    cout << "Enter size of array: ";
+    cin >> n;
+
+    cout << "Enter array elements: ";
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    int key;
+    cout << "Enter element to search: ";
+    cin >> key;
+
+    int result = linearsearch<int>(arr, n, key);
+
+    if(result != -1)
+        cout << "Element found at index: " << result << endl;
     else
-        cout << "Not found" << endl;
+        cout << "Element not found" << endl;
+
     return 0;
 }
