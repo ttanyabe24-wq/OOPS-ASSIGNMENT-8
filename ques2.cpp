@@ -14,8 +14,14 @@ T tofindmin(T arr[], int n) {
 }
 
 int main() {
-    int arr[] = {3, 1, 4, 1, 5, 9, 2};
-    int n = 7;
+   int n;
+    int arr[100];
+    cout<<"enter size of array" <<endl;
+    cin>>n;
+    cout<<"enter array elements";
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
     cout << "Min: " << tofindmin<int>(arr, n) << endl;
     return 0;
 }
