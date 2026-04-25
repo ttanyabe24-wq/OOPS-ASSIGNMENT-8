@@ -7,8 +7,10 @@ void swapans(T &a,T &b){
     b=temp;
 }
 int main(){
-int x=9;
-int y=8;
-swapans(x,y);
-cout<<"ans after values are swapped is"<<x<<" "<<y;
+    int num1,num2;
+cout<<"enter numbers you want to swap: ";
+    cin>>num1>>num2;
+    cout<<"hence number before swapping are: "<<num1<<num2<<endl;
+ swapans(num1,num2);
+    cout<<"after swap : "<<num1<<num2;
 }
